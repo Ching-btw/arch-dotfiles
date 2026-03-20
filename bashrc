@@ -25,7 +25,7 @@ iopp() {
     fi
 
     remote_url="$1"
-    commit_message="${2:-initialize Unity Project}"
+    commit_message="${2:-initialize the Project}"
 
     git init
     git branch -m main
@@ -53,7 +53,7 @@ ac(){
         return 1
     fi
 
-    local commit_message="${2:-Auto commit on $(date '+%Y-%m-%d %H:%M:%S')}"
+    local commit_message="${2:-.}"
 
     git add .
 
@@ -80,7 +80,7 @@ acp() {
     fi
 
     local branch_name="$1"
-    local commit_message="${2:-Auto commit on $(date '+%Y-%m-%d %H:%M:%S')}"
+    local commit_message="${2:-.}"
 
     git add .
 
