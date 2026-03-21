@@ -5,6 +5,7 @@ input {
         repeat-delay 250
         repeat-rate 35
         xkb {
+			options "caps:escape_shifted_capslock"
         }
         numlock
     }
@@ -28,6 +29,7 @@ input {
 
     trackpoint {
     }
+
     focus-follows-mouse max-scroll-amount="0%"
 }
 
